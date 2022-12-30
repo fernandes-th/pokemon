@@ -134,6 +134,10 @@ h1 {
         width: 80%;
     }
 
+    .galeria-box h2 {
+        font-size: 16px;
+    }
+
     .galeria-box ul {
         font-size: 14px;
     }
