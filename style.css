@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header, footer {
+    background-color: #F97100;
+    width: 100%;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    padding: 16px 0;
+}
+
+footer {
+    margin-top: 5px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.principal {
+    width: 75%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.principal p {
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.secao-img p {
+    margin-bottom: 5px;
+}
+
+.galeria-img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.galeria-box {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    width: calc((100% / 3) - 20px);
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background-color: #FFB500;
+    padding: 35px 45px ;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px #F97100 inset;
+    color: #fff;
+}
+
+.galeria-box h2 {
+    font-size: 20px;
+}
+
+.galeria-box-img {
+    width: 100%;
+    flex: 1;
+}
+
+.galeria-box-img img {
+    flex: 1;
+    display: block;
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.galeria-box ul {
+    align-self: flex-start;
+    line-height: 28px;
+    width: 80%;
+}
+
+.secao-img-overflow {
+    margin-bottom: 25px;
+}
+
+.secao-img-overflow p {
+    margin-bottom: 5px;
+}
+
+.galeria-overflow {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+}
+
+.galeria-overflow img {
+    width: calc((100%/3) - 12px);
+    box-shadow: 2px 2px 15px 0px;
+    margin-bottom: 10px;
+}
+
+.ultimo-p {
+    width: 75%;
+    margin: 0 auto;
+}
+
+@media (max-width:900px){
+    .galeria-img {
+        justify-content: center;
+        gap: 10px 35px;
+    }
+    .galeria-box {
+        width: calc((100% / 2) - 20px);
+    }
+}
+
+@media (max-width: 600px){
+    .galeria-img {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .galeria-box {
+        width: 80%;
+    }
+
+    .secao-img p {
+        margin-bottom: 20px;
+    }
+
+    .galeria-overflow img {
+        width: calc((100%/2) - 20px);
+    }
+}
+
+@media (max-width: 400px) {
+    .galeria-overflow img {
+        width: 100%;
+    }
+
+    .galeria-box h2 {
+        font-size: 14px;
+    }
+    .galeria-box ul {
+        font-size: 14px;
+    }
+}
