@@ -134,6 +134,10 @@ h1 {
         width: 80%;
     }
 
+    .galeria-box ul {
+        font-size: 14px;
+    }
+
     .secao-img p {
         margin-bottom: 20px;
     }
